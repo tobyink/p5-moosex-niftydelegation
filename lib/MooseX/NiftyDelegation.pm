@@ -155,6 +155,28 @@ regular expression. This function is not exported by default.
 
 =back
 
+Now, why would you want to stuff these "delegted" methods into attributes?
+Why not just write them as regular methods?
+
+   sub is_in_progress {
+      my $self = shift;
+      $self->status eq 'in progress';
+   }
+
+A good question. Writing methods which are closely associated with a
+single attribute as delegated methods just seems to me to be a nice
+way of grouping related methods. You can even use it for builders:
+
+   has user_agent => (
+      is         => 'ro',
+      isa        => 'Object',
+      lazy_build => 1,
+      handles    => {
+         get               => 'get',
+         _build_user_agent => sub { LWP::UserAgent->new },
+      },
+   );
+
 =head1 EXPORT
 
 This module uses L<Sub::Exporter> so it's possible to rename exported
