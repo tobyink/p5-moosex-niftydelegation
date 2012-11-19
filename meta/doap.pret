@@ -1,0 +1,19 @@
+# This file contains general metadata about the project.
+
+@prefix : <http://usefulinc.com/ns/doap#>.
+
+`MooseX-NiftyDelegation`
+	:programming-language "Perl" ;
+	:shortdesc            "extra sugar for method delegation";
+	:homepage             <https://metacpan.org/release/MooseX-NiftyDelegation>;
+	:download-page        <https://metacpan.org/release/MooseX-NiftyDelegation>;
+	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-NiftyDelegation>;
+	:repository           [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-moosex-niftydelegation> ];
+	:created              2012-11-19;
+	:license              <http://dev.perl.org/licenses/>;
+	:maintainer           cpan:TOBYINK;
+	:developer            cpan:TOBYINK.
+
+<http://dev.perl.org/licenses/>
+	dc:title  "the same terms as the perl 5 programming language system itself".
+
