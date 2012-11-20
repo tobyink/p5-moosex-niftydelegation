@@ -116,7 +116,7 @@ coderefs like this:
 
 Kinda ugly though. The C<MooseX::NiftyDelegation::Trait::Attribute> trait
 pretties it up a little by automatically wrapping the coderef with a little
-gubbin that sets C<< $_ >> to C<< $self->status >>. Thus:
+gubbin that sets C<< $_ >> to C<< $self->$attribute >>. Thus:
 
    has status => (
       is       => 'rw',
