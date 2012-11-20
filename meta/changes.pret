@@ -4,3 +4,9 @@
 	issued  2012-11-19;
 	label   "Initial release".
 
+`MooseX-NiftyDelegation 0.002 cpan:TOBYINK`
+	issued  2012-11-20;
+	changeset [
+		item "Clarify that the status attribute isn't special; just an example; works with any attribute."^^Documentation;
+		item "List dependencies."^^Packaging;
+	].
