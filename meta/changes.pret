@@ -10,3 +10,10 @@
 		item "Clarify that the status attribute isn't special; just an example; works with any attribute."^^Documentation;
 		item "List dependencies."^^Packaging;
 	].
+
+`MooseX-NiftyDelegation 0.003 cpan:TOBYINK`
+	issued    2014-09-10;
+	changeset [
+		item "Switch to Dist::Inkt."^^Packaging;
+	].
+

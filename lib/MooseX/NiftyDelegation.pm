@@ -7,7 +7,7 @@ use utf8;
 	package MooseX::NiftyDelegation;
 	no thanks;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.002';
+	our $VERSION   = '0.003';
 	use constant {
 		Nifty => 'MooseX::NiftyDelegation::Trait::Attribute',
 	};
@@ -32,7 +32,7 @@ use utf8;
 	package MooseX::NiftyDelegation::Trait::Attribute;
 	no thanks;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.002';
+	our $VERSION   = '0.003';
 	use Moose::Role;
 	around _canonicalize_handles => sub {
 		my $orig = shift;
